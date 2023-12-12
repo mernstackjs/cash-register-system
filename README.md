@@ -36,6 +36,32 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/cash-register-system.git
+   git clone https://github.com/mernstackjs/cash-register-system.git
    cd cash-register-system
    ```
+
+## Contributing
+
+If you'd like to contribute to the project, please follow these steps:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Make your changes and submit a pull request.
+
+## Endpoints
+
+Products:
+
+GET /api/products - Get all products
+POST /api/products - Add a new product
+Sales:
+
+GET /api/sales - Get all sales
+POST /api/sales - Process a new sale
+Users:
+
+POST /api/users - Create a new user (if needed)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
