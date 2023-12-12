@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session");
-
+const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -13,6 +13,12 @@ mongoose
   .catch((err) => console.log(err));
 
 // Middleware
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
 app.use(
   session({
     secret: "fghaj",
